@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+
+:root {
+  --width-side-margins: 15rem;
+  --font-family-main: Livvic;
+
+  --shadow-main: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.1));
+  --shadow-lite: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.02));
+  --shadow-secondary: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0));
+
+  --color-white: #fff;
+  --color-blue: #7ab4ff;
+  --color-blue-light: #99b9ff;
+  --color-orange: #ff977e;
+  --color-green: #46a27b;
+  --color-gray: #8b8b8b;
+
+  --gradient-blue: linear-gradient(90deg, #73a2ff 0%, #8bdcff 100%);
+  --gradient-orange: linear-gradient(90deg, #ff7a7a 0%, #ffed8b 100%);
+  --gradient-green: linear-gradient(90deg, #10984f 0%, #49ee95 100%);
+
+  --gradient-blue-135: linear-gradient(135deg, #73a2ff 0%, #8bdcff 100%);
+  --gradient-orange-135: linear-gradient(135deg, #ff7a7a 0%, #ffed8b 100%);
+  --gradient-green-135: linear-gradient(135deg, #10984f 0%, #49ee95 100%);
+
+  --move-up: -5px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--font-family-main);
+}

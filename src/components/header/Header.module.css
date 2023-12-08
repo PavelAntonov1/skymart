@@ -1,0 +1,17 @@
+.container {
+  width: auto;
+  height: 10rem;
+  background: var(--gradient-blue);
+  filter: var(--shadow-main);
+  padding: 0rem 5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.links {
+  display: flex;
+  column-gap: 2rem;
+}

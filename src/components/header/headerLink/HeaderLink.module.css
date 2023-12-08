@@ -1,0 +1,26 @@
+.container {
+  text-decoration: none;
+  font-size: 3rem;
+  color: var(--color-white);
+  filter: var(--shadow-main);
+
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+
+  transition: all 0.3s ease;
+}
+
+.container > * {
+  filter: var(--shadow-main);
+}
+
+.container:hover {
+  transform: translateY(var(--move-up));
+  filter: var(--shadow-lite);
+}
+
+span {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}

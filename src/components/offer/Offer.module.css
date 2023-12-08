@@ -1,0 +1,13 @@
+.container {
+  padding: 1rem;
+  border-radius: 5px;
+  filter: var(--shadow-secondary);
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.container:hover {
+  transform: perspective(25rem) rotateY(-5deg) scale(1.05);
+  filter: var(--shadow-secondary);
+}

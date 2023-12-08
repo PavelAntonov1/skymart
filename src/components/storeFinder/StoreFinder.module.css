@@ -1,0 +1,22 @@
+.container {
+  padding-left: var(--width-side-margins);
+  padding-right: var(--width-side-margins);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.errorContainer {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  column-gap: 1rem;
+  justify-content: center;
+  width: 100%;
+  color: var(--color-gray);
+}
+
+.iconError {
+  font-size: 3rem;
+}
