@@ -1,6 +1,7 @@
 const stores = [
   {
     id: 0,
+    storeName: "VANCOUVER OAK ST",
     address: "8261 Oak St, Vancouver, BC V6P 4A8",
     phones: ["(604) 225-9751", "(672) 999-2009", "(236) 975-9888"],
     geolocation: {
@@ -17,9 +18,9 @@ const stores = [
       sun: null,
     },
   },
-
   {
     id: 1,
+    storeName: "VANCOUVER BROADWAY",
     address: "1816 W Broadway Vancouver, BC V6J 1Y9",
     phones: ["(778) 369-1249", "(604) 388-8868"],
     geolocation: {
@@ -36,11 +37,16 @@ const stores = [
       sun: "11:00am-5:00pm",
     },
   },
-
   {
     id: 2,
+    storeName: "SURREY",
     address: "Suite 118-B, 12888 80 Ave Surrey, BC V3W 3A8",
-    phones: ["(778) 792-7927", "(604) 503-6766", "(778) 704-1801"],
+    phones: [
+      "(778) 792-7927",
+      "(604) 503-6766",
+      "(778) 704-1801",
+      "(236) 335-1737",
+    ],
     geolocation: {
       lat: 49.14799,
       long: -122.86605,
@@ -55,9 +61,9 @@ const stores = [
       sun: "11:00am-6:00pm",
     },
   },
-
   {
     id: 3,
+    storeName: "WHITE ROCK",
     address: "1544 Johnston Rd, White Rock, BC V4B 3Z8",
     phones: ["(778) 369-1235", "(778) 792-7447"],
     geolocation: {
@@ -76,6 +82,7 @@ const stores = [
   },
   {
     id: 4,
+    storeName: "COQUITLAM",
     address: "#128, 3030 Lincoln Ave, Coquitlam, BC V3B 6B4",
     geolocation: {
       lat: 49.27889,
@@ -94,6 +101,7 @@ const stores = [
   },
   {
     id: 5,
+    storeName: "ALDERGROVE – LANGLEY",
     address: "27114 Fraser Hwy, Aldergrove, BC V4W 3P6",
     phones: ["(604) 857-0255"],
     geolocation: {
@@ -112,6 +120,7 @@ const stores = [
   },
   {
     id: 6,
+    storeName: "KAMLOOPS",
     address: "244 Briar Ave, Kamloops, BC V2B 1C1",
     phones: ["(250) 280-4252"],
     geolocation: {
@@ -130,6 +139,7 @@ const stores = [
   },
   {
     id: 7,
+    storeName: "EDMONTON",
     address: "9828 22 Ave NW, Edmonton, AB T6N 1L1",
     phones: ["(780) 395-0898"],
     geolocation: {
@@ -148,6 +158,7 @@ const stores = [
   },
   {
     id: 8,
+    storeName: "WINNIPEG",
     address: "#308, 2305 McPhillips St, Winnipeg, MB R2V 3E1",
     phones: ["(778) 704-1198"],
     geolocation: {
@@ -165,5 +176,7 @@ const stores = [
     },
   },
 ];
+
+console.log(stores);
 
 export { stores };

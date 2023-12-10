@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const StoreInformation = (props) => {
   const today = days[new Date().getDay()];
+  console.log(new Date().getDay());
   const todayHours = props.store.businessHours[today];
 
   const [isChecked, setIsChecked] = useState(false);
@@ -19,9 +20,9 @@ const StoreInformation = (props) => {
         onChange={() => {
           setIsChecked(!isChecked);
         }}
-      ></input>
+      />
 
-      <label for="checkbox" className={styles.checkbox}>
+      <label htmlFor="checkbox" className={styles.checkbox}>
         <span className={styles.todayHours}>{todayHours}</span>
 
         <p className={styles.businessHours}>
@@ -38,6 +39,7 @@ const StoreInformation = (props) => {
             </div>
           ))}
         </p>
+
         <FaAngleDown className={styles.icon} />
       </label>
     </div>

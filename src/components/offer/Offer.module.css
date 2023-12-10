@@ -1,6 +1,6 @@
 .container {
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   filter: var(--shadow-secondary);
   transition: all 0.2s ease;
   text-decoration: none;

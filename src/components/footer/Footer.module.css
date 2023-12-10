@@ -1,0 +1,26 @@
+.container {
+  background: var(--gradient-black);
+  color: var(--color-white);
+  padding: 2rem var(--width-side-margins);
+  display: flex;
+  justify-content: space-around;
+  /* column-gap: 2rem; */
+}
+
+.title {
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.5rem 0rem;
+}
+
+.list {
+  list-style-type: disc;
+}
+
+.list > li {
+  padding: 0.2rem;
+}
+
+.list > li > * {
+  color: inherit;
+}

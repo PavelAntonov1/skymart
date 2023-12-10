@@ -3,7 +3,7 @@
   height: 10rem;
   background: var(--gradient-blue);
   filter: var(--shadow-main);
-  padding: 0rem 5rem;
+  padding: 0rem var(--width-side-margins);
 
   display: flex;
   justify-content: space-between;

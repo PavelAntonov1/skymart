@@ -3,6 +3,9 @@ import Navigation from "../../components/navigation/Navigation";
 import Layout from "../../components/utilities/layout/Layout";
 import Offer from "../../components/offer/Offer";
 import styles from "./ProductsPage.module.css";
+import Category from "../../components/category/Category";
+import { categories } from "../../data/categories";
+import AddressList from "../../components/addressList/AdressList";
 
 const ProductsPage = (props) => {
   return (
@@ -40,6 +43,18 @@ const ProductsPage = (props) => {
           Save Money on Shipping to India
         </Offer>
       </section>
+
+      <section className={styles.categories}>
+        {categories.map((category, i) => (
+          <Category
+            title={category}
+            key={i}
+            to={`/products/${category.trim().replace(" ", "-").toLowerCase()}`}
+          />
+        ))}
+      </section>
+
+      <AddressList />
     </Layout>
   );
 };

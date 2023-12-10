@@ -1,6 +1,6 @@
 .container {
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--color-white);
   filter: var(--shadow-main);
 
@@ -21,6 +21,6 @@
 }
 
 span {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
 }

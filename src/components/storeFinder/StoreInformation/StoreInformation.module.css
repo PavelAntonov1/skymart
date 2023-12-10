@@ -15,7 +15,7 @@
 
   border: 2.5px solid var(--color-green);
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
 
   color: var(--color-green);
 

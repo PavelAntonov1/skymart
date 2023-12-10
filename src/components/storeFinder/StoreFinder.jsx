@@ -4,7 +4,7 @@ import { stores } from "../../data/stores";
 
 import { findClosestStore } from "../../helpers/geoFunctions";
 
-import { FaSadTear } from "react-icons/fa";
+import { FaSadTear, FaSpinner } from "react-icons/fa";
 
 import { useState, useEffect } from "react";
 import StoreAddress from "./StoreAddress/StoreAddress";
@@ -14,7 +14,7 @@ const StoreFinder = () => {
   const [closestStore, setClosestStore] = useState(null);
   const [error, setError] = useState(null);
 
-  let content = "Loading...";
+  let content;
 
   if (closestStore && !error) {
     content = (
@@ -30,6 +30,15 @@ const StoreFinder = () => {
       <div className={styles.errorContainer}>
         <FaSadTear className={styles.iconError} />
         {error}
+      </div>
+    );
+  }
+
+  if (!closestStore && !error) {
+    content = (
+      <div className={styles.errorContainer}>
+        <FaSpinner className={styles.iconError} />
+        Loading...
       </div>
     );
   }
