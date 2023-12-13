@@ -1,7 +1,5 @@
 .container {
-  padding-left: var(--width-side-margins);
-  padding-right: var(--width-side-margins);
-  padding-top: 2rem;
+  padding: 2rem var(--width-side-margins);
   display: flex;
   justify-content: space-between;
   align-items: center;

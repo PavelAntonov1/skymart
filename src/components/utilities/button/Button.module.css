@@ -3,4 +3,32 @@
   background-color: none;
   font-family: inherit;
   font-size: inherit;
+
+  padding: 0.3rem 1rem;
+  text-transform: uppercase;
+
+  font-family: inherit;
+  border-radius: var(--border-radius);
+
+  background: var(--gradient-orange-135);
+
+  color: var(--color-white);
+  font-weight: 500;
+
+  filter: var(--shadow-main);
+  font-size: 1.3rem;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(var(--move-up));
+  z-index: 9999;
+}
+
+.container:active {
+  transform: translateY(calc(-1 * (var(--move-up))));
+  z-index: 9999;
 }

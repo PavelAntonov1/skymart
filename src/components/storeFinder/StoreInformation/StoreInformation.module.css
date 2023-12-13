@@ -44,6 +44,10 @@
   opacity: 0;
 }
 
+.inputCheckBox:checked ~ .checkbox > .icon {
+  opacity: 0;
+}
+
 .todayHours {
   opacity: 1;
 
@@ -72,6 +76,7 @@
 
 .icon {
   font-size: 1.3rem;
+  transition: all 0.3s ease;
 }
 
 .phoneIcon {
