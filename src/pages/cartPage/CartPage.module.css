@@ -1,0 +1,49 @@
+.container {
+  padding: 1rem var(--width-side-margins);
+
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 1rem;
+}
+
+.title {
+  text-transform: uppercase;
+  color: var(--color-gray);
+  font-size: 1.5rem;
+}
+
+.total {
+  text-transform: uppercase;
+  color: var(--color-gray);
+  font-size: 1.5rem;
+  text-align: end;
+}
+
+.btnCheckout {
+  background: var(--gradient-blue) !important;
+  font-size: 1.5rem !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  column-gap: 0.5rem !important;
+  padding: 1rem 2rem !important;
+
+  align-self: end !important;
+}
+
+.titleEmpty {
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--color-gray);
+}
+
+.icon {
+  font-size: 3rem;
+}

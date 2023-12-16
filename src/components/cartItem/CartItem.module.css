@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.05);
+}
+
+.container:last-of-type {
+  border-bottom: none;
+}
+
+.title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--color-blue);
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.information {
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+  justify-content: flex-end;
+}

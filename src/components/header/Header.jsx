@@ -19,7 +19,7 @@ const Header = () => {
           <span>Account</span>
         </HeaderLink>
 
-        <HeaderLink to="/cart">
+        <HeaderLink to="/guest/cart">
           <FaShoppingCart />
           <span>Cart</span>
         </HeaderLink>

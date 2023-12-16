@@ -1,13 +1,30 @@
 import styles from "./Product.module.css";
 
 import { urlFor } from "../../lib/client";
+import { useRef } from "react";
 
 import Button from "../utilities/button/Button";
 import ProductQuantity from "./productQuantity/ProductQuantity";
-import { NavLink } from "react-router-dom";
+
+import { useDispatch } from "react-redux";
+import { addProduct } from "../../storeSlices/cartSlice";
 
 const Product = (props) => {
-  console.log(props.image);
+  const quantityRef = useRef();
+
+  const dispatch = useDispatch();
+
+  const addToCartHandler = () => {
+    dispatch(
+      addProduct({
+        title: props.title,
+        id: props.id,
+        price: props.price,
+        quantity: +quantityRef.current.value,
+      })
+    );
+  };
+
   return (
     <div className={styles.container}>
       <img
@@ -20,10 +37,11 @@ const Product = (props) => {
         <h4 className={styles.title}>{props.title}</h4>
 
         <div className={styles.info}>
-          <ProductQuantity />
+          <ProductQuantity ref={quantityRef} />
           <span className={styles.price}>${props.price}</span>
         </div>
-        <Button>Add</Button>
+
+        <Button onClick={addToCartHandler}>Add</Button>
       </div>
     </div>
   );

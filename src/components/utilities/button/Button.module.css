@@ -15,7 +15,7 @@
   color: var(--color-white);
   font-weight: 500;
 
-  filter: var(--shadow-main);
+  filter: var(--shadow-lite);
   font-size: 1.3rem;
 
   cursor: pointer;

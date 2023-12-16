@@ -1,3 +1,4 @@
+import CartPage from "./pages/cartPage/CartPage";
 import CategoryPage from "./pages/categoryPage/CategoryPage";
 import ProductsPage from "./pages/productsPage/ProductsPage";
 import {
@@ -17,6 +18,8 @@ const App = () => {
           <Route index={true} element={<ProductsPage />} />
           <Route path=":category" element={<CategoryPage />} />
         </Route>
+
+        <Route path="/:userId/cart" element={<CartPage />} />
 
         <Route path="/shipping" element={<ProductsPage />} />
         <Route path="/photo-services" element={<ProductsPage />} />
