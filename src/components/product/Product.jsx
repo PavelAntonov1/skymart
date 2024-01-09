@@ -8,6 +8,8 @@ import ProductQuantity from "./productQuantity/ProductQuantity";
 
 import { useDispatch } from "react-redux";
 import { addProduct } from "../../storeSlices/cartSlice";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Product = (props) => {
   const quantityRef = useRef();
@@ -41,7 +43,15 @@ const Product = (props) => {
           <span className={styles.price}>${props.price}</span>
         </div>
 
-        <Button onClick={addToCartHandler}>Add</Button>
+        <div className={styles.info}>
+          <Button onClick={addToCartHandler}>Add</Button>
+          <NavLink
+            to={`/products/${props.category}/${props.id}`}
+            className={styles.link}
+          >
+            Learn More
+          </NavLink>
+        </div>
       </div>
     </div>
   );

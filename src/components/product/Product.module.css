@@ -1,5 +1,5 @@
 .container {
-  min-width: 25rem;
+  min-width: 30rem;
   max-width: 30rem;
 
   padding: 1rem 2rem;
@@ -20,7 +20,8 @@
 
 .container:hover {
   animation-duration: 0.8s;
-  transform: scale(1.05);
+  transform: scale(0.95);
+  cursor: pointer;
 }
 
 .infoContainer {
@@ -51,6 +52,10 @@
   height: 10rem;
   filter: var(--shadow-main);
   opacity: 0.9;
+}
+
+.link {
+  color: var(--color-white);
 }
 
 @keyframes shaking {

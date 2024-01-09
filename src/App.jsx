@@ -1,5 +1,6 @@
 import CartPage from "./pages/cartPage/CartPage";
 import CategoryPage from "./pages/categoryPage/CategoryPage";
+import ProductPage from "./pages/productPage/ProductPage";
 import ProductsPage from "./pages/productsPage/ProductsPage";
 import {
   BrowserRouter as Router,
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/products">
           <Route index={true} element={<ProductsPage />} />
           <Route path=":category" element={<CategoryPage />} />
+          <Route exact path=":category/:productId" element={<ProductPage />} />
         </Route>
 
         <Route path="/:userId/cart" element={<CartPage />} />

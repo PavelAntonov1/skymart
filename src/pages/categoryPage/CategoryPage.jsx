@@ -1,5 +1,7 @@
 import { client } from "../../lib/client";
 
+import { FaSadTear, FaSpinner } from "react-icons/fa";
+
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
@@ -9,7 +11,9 @@ import Layout from "../../components/utilities/layout/Layout";
 import Type from "../../components/type/Type";
 import ProductsRow from "../../components/product/productsRow/ProductsRow";
 import Product from "../../components/product/Product";
-import { FaSadTear, FaSpinner } from "react-icons/fa";
+import Wave from "../../components/utilities/wave/Wave";
+
+import { transformProducts } from "../../helpers/productsFunctions";
 
 const CategoryPage = (props) => {
   const { category } = useParams();
@@ -27,22 +31,9 @@ const CategoryPage = (props) => {
 
       if (data && data.length > 0) {
         setProducts(
-          data
-            .filter((product) => product.category === category)
-            .map((product) => {
-              const { name, category, type, image, price, details, _id } =
-                product;
-
-              return {
-                name,
-                category,
-                type,
-                image,
-                price,
-                details,
-                id: _id,
-              };
-            })
+          transformProducts(
+            data.filter((product) => product.category === category)
+          )
         );
       }
 
@@ -85,6 +76,7 @@ const CategoryPage = (props) => {
                         id={product.id}
                         key={product.id}
                         image={product.image}
+                        category={product.category}
                       />
                     ))}
                 </ProductsRow>
@@ -114,7 +106,12 @@ const CategoryPage = (props) => {
     );
   }
 
-  return <Layout>{content}.</Layout>;
+  return (
+    <Layout>
+      {content}
+      <Wave />
+    </Layout>
+  );
 };
 
 export default CategoryPage;

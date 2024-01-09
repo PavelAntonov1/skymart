@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+}
+
+.panel1 {
+  background: var(--gradient-white-135);
+  filter: var(--shadow-main);
+
+  height: 20rem;
+  width: 20rem;
+  padding: 2rem;
+
+  background: var(--gradient-white-135);
+  border-radius: var(--border-radius);
+
+  z-index: 1000;
+}
+
+.panel2 {
+  height: 20rem;
+  width: 20rem;
+  padding: 2rem;
+
+  position: absolute;
+  left: -2rem;
+  bottom: 2rem;
+  z-index: -3000;
+
+  filter: var(--shadow-main);
+  background: var(--gradient-blue-135);
+  border-radius: var(--border-radius);
+}
+
+.image {
+  height: 100%;
+}

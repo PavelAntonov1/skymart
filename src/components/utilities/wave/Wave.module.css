@@ -1,0 +1,54 @@
+.container {
+  position: relative;
+  height: 12rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container > * {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 12rem;
+  width: 100%;
+  background: url(wave.svg);
+  background-size: 1000px 200px;
+  background-repeat: repeat-x;
+}
+
+.wave1 {
+  animation: animate 60s linear infinite;
+  z-index: 1000;
+  opacity: 0.5;
+
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+.wave2 {
+  animation: animate2 30s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 0px;
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: -1000px;
+  }
+}

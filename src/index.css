@@ -30,6 +30,11 @@
   --gradient-blue-135: linear-gradient(135deg, #73a2ff 0%, #8bdcff 100%);
   --gradient-orange-135: linear-gradient(135deg, #ff7a7a 0%, #ffed8b 100%);
   --gradient-green-135: linear-gradient(135deg, #10984f 0%, #49ee95 100%);
+  --gradient-white-135: linear-gradient(
+    131deg,
+    rgba(237, 237, 237, 0.82) 0%,
+    rgba(255, 255, 255, 0.97) 100%
+  );
 
   --move-up: -5px;
 
