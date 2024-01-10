@@ -23,6 +23,7 @@ const Product = (props) => {
         id: props.id,
         price: props.price,
         quantity: +quantityRef.current.value,
+        category: props.category,
       })
     );
   };

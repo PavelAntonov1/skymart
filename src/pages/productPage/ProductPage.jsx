@@ -22,7 +22,7 @@ const ProductPage = (props) => {
   const { productId } = useParams();
 
   const [product, setProduct] = useState();
-  const [similarProducts, setSimilarProducts] = useState();
+  const [similarProducts, setSimilarProducts] = useState(null);
 
   const [error, setError] = useState();
 
@@ -84,6 +84,7 @@ const ProductPage = (props) => {
         id: product.id,
         price: product.price,
         quantity: +quantityRef.current.value,
+        category: product.category,
       })
     );
   };
