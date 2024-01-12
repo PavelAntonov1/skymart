@@ -58,3 +58,35 @@
   padding: 1rem 1rem 1rem 0rem;
   color: var(--color-black);
 }
+
+@media (max-width: 767px) {
+  .container {
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 1rem;
+    align-items: center;
+  }
+
+  .similarProductsSection {
+    padding: 1rem;
+  }
+
+  .btnCheckout {
+    font-size: 1.2rem !important;
+
+    column-gap: 0.5rem !important;
+    padding: 0.5rem 1rem !important;
+
+    align-self: center !important;
+
+    width: 100% !important;
+  }
+
+  .heading {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 0rem;
+  }
+}

@@ -1,6 +1,6 @@
 .container {
   background: var(--gradient-orange);
-  height: 3.5rem;
+  height: var(--navigation-bar-height);
   list-style-type: none;
   display: flex;
   column-gap: 2rem;
@@ -60,19 +60,35 @@
     padding: 0rem;
 
     display: flex;
+    column-gap: 0;
 
-    row-gap: 1rem;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: auto;
   }
 
   .container > li > * {
     font-size: 1rem;
+    transition: none;
   }
 
   .container > li {
     border-radius: 0px;
     text-align: center;
+    transition: none;
+    height: var(--navigation-bar-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* hover styles */
+  .container > li:hover {
+    color: var(--color-white);
+    background-size: none;
+  }
+
+  .container > li:hover > * {
+    color: var(--color-orange);
   }
 }

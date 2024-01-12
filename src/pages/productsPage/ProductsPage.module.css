@@ -65,14 +65,14 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
     grid-template-rows: repeat(4, 1fr); /* 4 rows with equal height */
-    gap: 0.5rem;
+    gap: 1rem;
     padding: 1rem 1rem;
     height: auto;
 
     color: var(--color-white);
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .offer1 {
@@ -113,7 +113,7 @@
   .categories {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
+    gap: 1rem;
 
     padding: 1rem;
     background: var(--gradient-blue);

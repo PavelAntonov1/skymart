@@ -38,3 +38,38 @@
 .image {
   width: 100%;
 }
+
+@media (max-width: 767px) {
+  .panel1 {
+    background: var(--gradient-white-135);
+    filter: var(--shadow-lite);
+
+    height: 15rem;
+    width: 15rem;
+    padding: 1rem;
+
+    background: var(--gradient-white-135);
+    border-radius: var(--border-radius);
+
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .panel2 {
+    height: 15rem;
+    width: 15rem;
+    padding: 1rem;
+
+    position: absolute;
+    left: -1rem;
+    bottom: 1rem;
+    z-index: -3000;
+
+    filter: var(--shadow-lite);
+    background: var(--gradient-blue-135);
+    border-radius: var(--border-radius);
+  }
+}

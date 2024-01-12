@@ -18,7 +18,7 @@ import { transformProducts } from "../../helpers/productsFunctions";
 const CategoryPage = (props) => {
   const { category } = useParams();
 
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState(null);
   const [error, setError] = useState(null);
 
   let content;
@@ -49,9 +49,9 @@ const CategoryPage = (props) => {
     fetchProductsData();
   }, []);
 
-  const productTypes = [...new Set(products.map((product) => product.type))];
+  if (!error && products && products.length > 0) {
+    const productTypes = [...new Set(products.map((product) => product.type))];
 
-  if (!error) {
     content = (
       <>
         <section className={styles.typesContainer}>
@@ -106,7 +106,7 @@ const CategoryPage = (props) => {
     );
   }
 
-  if (products.length === 0 && !error) {
+  if (products && products.length === 0 && !error) {
     content = (
       <div className={styles.messageContainer}>
         <FaClock className={styles.messageIcon} />

@@ -7,6 +7,7 @@ import ProductQuantity from "../product/productQuantity/ProductQuantity";
 import Button from "../utilities/button/Button";
 
 import { setProductQuantity, removeProduct } from "../../storeSlices/cartSlice";
+import { NavLink } from "react-router-dom";
 
 const CartItem = (props) => {
   const quantityRef = useRef();
@@ -24,7 +25,12 @@ const CartItem = (props) => {
 
   return (
     <div className={styles.container}>
-      <h4 className={styles.title}>{props.title}</h4>
+      <NavLink
+        className={styles.title}
+        to={`/products/${props.category}/${props.id}`}
+      >
+        {props.title}
+      </NavLink>
       <div className={styles.information}>
         <span className={styles.price}>${props.price}</span>
 

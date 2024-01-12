@@ -48,4 +48,18 @@
   .title {
     font-size: 1.2rem;
   }
+
+  .container::before {
+    display: none;
+  }
+
+  .container:hover::before {
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  .container:hover > .title {
+    transform: none;
+  }
 }

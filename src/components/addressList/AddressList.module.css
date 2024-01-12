@@ -61,4 +61,12 @@
   .separator {
     display: none;
   }
+
+  .container > li > *:hover {
+    color: var(--color-gray);
+  }
+
+  .container > li:hover {
+    transform: none;
+  }
 }

@@ -12,7 +12,7 @@ import Wave from "../../components/utilities/wave/Wave";
 
 import { useDispatch } from "react-redux";
 import { addProduct } from "../../storeSlices/cartSlice";
-import { FaCartPlus } from "react-icons/fa";
+import { FaCartPlus, FaSadTear, FaSpinner } from "react-icons/fa";
 
 import { transformProducts } from "../../helpers/productsFunctions.js";
 import ProductsRow from "../../components/product/productsRow/ProductsRow.jsx";
@@ -21,7 +21,7 @@ import Product from "../../components/product/Product.jsx";
 const ProductPage = (props) => {
   const { productId } = useParams();
 
-  const [product, setProduct] = useState();
+  const [product, setProduct] = useState(null);
   const [similarProducts, setSimilarProducts] = useState(null);
 
   const [error, setError] = useState();
@@ -101,11 +101,9 @@ const ProductPage = (props) => {
             <h1 className={styles.title}>{product.name}</h1>
             <p className={styles.description}>{product.details}</p>
 
-            <div className={styles.productInteraction}>
-              <div className={styles.cost}>
-                <h2 className={styles.price}>${product.price}</h2>
-                <ProductQuantity ref={quantityRef} />
-              </div>
+            <div className={styles.cost}>
+              <h2 className={styles.price}>${product.price}</h2>
+              <ProductQuantity ref={quantityRef} />
             </div>
 
             <Button onClick={addToCartHandler} className={styles.button}>
@@ -115,6 +113,22 @@ const ProductPage = (props) => {
           </div>
         </div>
       </>
+    );
+  }
+
+  if (!error && !product) {
+    <div className={styles.messageContainer}>
+      <FaSpinner className={styles.messageIcon} />
+      Loading...
+    </div>;
+  }
+
+  if (error) {
+    content = (
+      <div className={styles.messageContainer}>
+        <FaSadTear className={styles.messageIcon} />
+        {error}
+      </div>
     );
   }
 

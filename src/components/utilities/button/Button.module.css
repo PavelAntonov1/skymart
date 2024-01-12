@@ -32,3 +32,20 @@
   transform: translateY(calc(-1 * (var(--move-up))));
   z-index: 9999;
 }
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+  }
+
+  .container:hover {
+    transform: none;
+    z-index: 9999;
+  }
+
+  .container:active {
+    transform: none;
+    z-index: 9999;
+  }
+}

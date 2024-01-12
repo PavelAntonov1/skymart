@@ -75,3 +75,45 @@
     transform: rotate(0deg);
   }
 }
+
+@media (max-width: 767px) {
+  .container {
+    min-height: 15rem;
+    max-height: 15rem;
+
+    max-width: 10rem;
+    min-width: 10rem;
+
+    padding: 1.5rem;
+
+    border-radius: var(--border-radius);
+    background: var(--gradient-blue);
+
+    filter: var(--shadow-lite);
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+  }
+
+  .image {
+    height: 8rem;
+    filter: var(--shadow-main);
+    opacity: 0.9;
+  }
+
+  .title {
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}

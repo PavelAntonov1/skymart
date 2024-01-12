@@ -61,3 +61,10 @@
 .buttonNext:active {
   transform: translateY(-50%) translateX(calc(100% + 0.5rem));
 }
+
+@media (max-width: 767px) {
+  .buttonNext,
+  .buttonPrev {
+    display: none;
+  }
+}

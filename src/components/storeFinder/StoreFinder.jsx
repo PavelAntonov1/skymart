@@ -18,10 +18,10 @@ const StoreFinder = () => {
 
   if (closestStore && !error) {
     content = (
-      <>
+      <div className={styles.container}>
         <StoreAddress address={closestStore.address} />
         <StoreInformation store={closestStore} />
-      </>
+      </div>
     );
   }
 
@@ -68,7 +68,7 @@ const StoreFinder = () => {
     }
   }, []);
 
-  return <div className={styles.container}>{content}</div>;
+  return content;
 };
 
 export default StoreFinder;

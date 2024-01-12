@@ -11,3 +11,10 @@
   transform: perspective(25rem) rotateY(-5deg) scale(1.05);
   filter: var(--shadow-secondary);
 }
+
+@media (max-width: 767px) {
+  .container:hover {
+    transform: none;
+    filter: none;
+  }
+}
