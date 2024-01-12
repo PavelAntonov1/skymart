@@ -112,6 +112,12 @@
 
     border: 2px solid var(--color-green);
     padding: 1rem;
+
+    transition: none;
+  }
+
+  .todayHours {
+    transition: none;
   }
 
   .businessHours {
@@ -125,6 +131,8 @@
     align-items: start;
     justify-content: start;
 
+    transition: none;
+
     z-index: -1;
   }
 
@@ -132,7 +140,23 @@
     font-size: 1rem;
   }
 
+  .icon {
+    transition: none;
+  }
+
   .phone {
     font-size: 1rem;
+  }
+
+  .inputCheckBox:checked ~ .checkbox {
+    animation-duration: none;
+    animation-name: none;
+    height: 12rem;
+  }
+
+  .inputCheckBox:not(:checked) ~ .checkbox {
+    animation-duration: none;
+    animation-name: none;
+    height: 2rem;
   }
 }
