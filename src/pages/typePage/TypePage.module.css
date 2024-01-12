@@ -1,0 +1,14 @@
+.productsSection {
+  padding: 2rem calc(var(--width-side-margins) - 7rem);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-gray);
+  text-transform: uppercase;
+}

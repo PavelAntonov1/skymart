@@ -1,6 +1,6 @@
 import { client } from "../../lib/client";
 
-import { FaSadTear, FaSpinner } from "react-icons/fa";
+import { FaClock, FaSadTear, FaSpinner } from "react-icons/fa";
 
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -56,7 +56,7 @@ const CategoryPage = (props) => {
       <>
         <section className={styles.typesContainer}>
           {productTypes.map((type, i) => (
-            <Type key={i} id={i} title={`${type} ${category}`} />
+            <Type key={i} id={i} title={type} />
           ))}
         </section>
 
@@ -90,8 +90,8 @@ const CategoryPage = (props) => {
 
   if (error) {
     content = (
-      <section className={styles.errorContainer}>
-        <FaSadTear className={styles.errorIcon} />
+      <section className={styles.messageContainer}>
+        <FaSadTear className={styles.messageIcon} />
         {error}
       </section>
     );
@@ -99,9 +99,18 @@ const CategoryPage = (props) => {
 
   if (!products && !error) {
     content = (
-      <div className={styles.errorContainer}>
-        <FaSpinner className={styles.iconError} />
+      <div className={styles.messageContainer}>
+        <FaSpinner className={styles.messageIcon} />
         Loading...
+      </div>
+    );
+  }
+
+  if (products.length === 0 && !error) {
+    content = (
+      <div className={styles.messageContainer}>
+        <FaClock className={styles.messageIcon} />
+        Coming Soon...
       </div>
     );
   }

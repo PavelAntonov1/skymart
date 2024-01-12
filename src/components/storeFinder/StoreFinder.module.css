@@ -18,3 +18,26 @@
 .iconError {
   font-size: 3rem;
 }
+
+@media (max-width: 767px) {
+  .container {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .errorContainer {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    column-gap: 0.5rem;
+    justify-content: center;
+    width: 100%;
+    color: var(--color-gray);
+  }
+
+  .iconError {
+    font-size: 2rem;
+  }
+}

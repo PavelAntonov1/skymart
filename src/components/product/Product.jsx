@@ -29,7 +29,7 @@ const Product = (props) => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${props.className}`}>
       <img
         src={urlFor(props.image[0])}
         alt={props.title}

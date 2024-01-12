@@ -4,7 +4,7 @@ import styles from "./Type.module.css";
 const Type = (props) => {
   return (
     <NavLink
-      to={props.title.trim().replace(" ", "-").toLowerCase()}
+      to={`type/${props.title.trim().replace(" ", "-").toLowerCase()}`}
       className={`${styles.container} ${
         props.id % 2 === 0 ? styles.greened : styles.oranged
       }`}

@@ -53,3 +53,26 @@
 .container > li.active > * {
   color: var(--color-orange);
 }
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0rem;
+
+    display: flex;
+
+    row-gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+  }
+
+  .container > li > * {
+    font-size: 1rem;
+  }
+
+  .container > li {
+    border-radius: 0px;
+    text-align: center;
+  }
+}

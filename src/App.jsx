@@ -8,6 +8,7 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
+import TypePage from "./pages/typePage/TypePage";
 
 const App = () => {
   return (
@@ -19,6 +20,11 @@ const App = () => {
           <Route index={true} element={<ProductsPage />} />
           <Route path=":category" element={<CategoryPage />} />
           <Route exact path=":category/:productId" element={<ProductPage />} />
+          <Route
+            exact
+            path=":category/type/:productType"
+            element={<TypePage />}
+          />
         </Route>
 
         <Route path="/:userId/cart" element={<CartPage />} />

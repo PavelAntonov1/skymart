@@ -54,3 +54,20 @@
 .container:hover .input {
   filter: var(--shadow-lite);
 }
+
+@media (max-width: 767px) {
+  .container {
+    position: relative;
+    width: 8rem;
+    height: 2rem;
+    z-index: 1;
+    transition: all 0.3s ease;
+
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .input {
+    width: 5.3rem;
+  }
+}

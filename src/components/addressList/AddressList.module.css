@@ -40,3 +40,25 @@
 .container > li:hover {
   transform: scale(1.05);
 }
+
+@media (max-width: 767px) {
+  .container {
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+  }
+
+  .container > li > * {
+    text-decoration: underline;
+    font-size: 1.2rem;
+  }
+
+  .separator {
+    display: none;
+  }
+}

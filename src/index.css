@@ -52,3 +52,10 @@ html {
   font-size: 16px;
   font-family: var(--font-family-main);
 }
+
+/* smarthpones */
+@media (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+}

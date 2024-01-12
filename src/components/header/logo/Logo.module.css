@@ -18,3 +18,13 @@
   font-weight: 600;
   text-transform: uppercase;
 }
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
+}

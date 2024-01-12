@@ -23,7 +23,7 @@
   color: var(--color-black);
 }
 
-.errorContainer {
+.messageContainer {
   padding: 10rem var(--width-side-margins);
   font-size: 2rem;
   display: flex;
@@ -33,6 +33,6 @@
   color: var(--color-gray);
 }
 
-.errorIcon {
+.messageIcon {
   font-size: 3rem;
 }

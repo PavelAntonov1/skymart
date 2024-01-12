@@ -59,3 +59,65 @@
 
   filter: var(--shadow-lite);
 }
+
+@media (max-width: 767px) {
+  .offers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+    grid-template-rows: repeat(4, 1fr); /* 4 rows with equal height */
+    gap: 0.5rem;
+    padding: 1rem 1rem;
+    height: auto;
+
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .offer1 {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .offer2 {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .offer3 {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .offer4 {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .offer5 {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+  }
+
+  .offer6 {
+    grid-row: 4;
+    grid-column: 1;
+  }
+
+  .offer7 {
+    grid-row: 4;
+    grid-column: 2;
+  }
+
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+
+    padding: 1rem;
+    background: var(--gradient-blue);
+
+    filter: var(--shadow-lite);
+  }
+}
