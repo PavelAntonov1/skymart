@@ -4,7 +4,9 @@ const Button = (props) => {
   return (
     <button
       onClick={props.onClick}
+      type={props.type}
       className={`${styles.container} ${props.className}`}
+      disabled={props.disabled}
     >
       {props.children}
     </button>

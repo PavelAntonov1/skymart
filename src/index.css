@@ -19,12 +19,14 @@
 
   --gradient-blue: linear-gradient(90deg, #73a2ff 0%, #8bdcff 100%);
   --gradient-orange: linear-gradient(90deg, #ff7a7a 0%, #ffed8b 100%);
+  --gradient-red: linear-gradient(90deg, #ff6161 0%, #fc8c8c 100%);
   --gradient-green: linear-gradient(90deg, #10984f 0%, #49ee95 100%);
   --gradient-white: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0.86) 0.32%,
     rgba(255, 255, 255, 0.82) 99.62%
   );
+
   --gradient-black: linear-gradient(91deg, #545454 0%, #808080 100%);
 
   --navigation-bar-height: 3.5rem;
@@ -33,9 +35,14 @@
   --gradient-orange-135: linear-gradient(135deg, #ff7a7a 0%, #ffed8b 100%);
   --gradient-green-135: linear-gradient(135deg, #10984f 0%, #49ee95 100%);
   --gradient-white-135: linear-gradient(
-    131deg,
+    135deg,
     rgba(237, 237, 237, 0.82) 0%,
     rgba(255, 255, 255, 0.97) 100%
+  );
+  --gradient-gray-135: linear-gradient(
+    135deg,
+    rgba(193, 193, 193, 0.82) 0%,
+    rgba(231, 231, 231, 0.97) 100%
   );
 
   --move-up: -5px;

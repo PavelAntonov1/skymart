@@ -33,6 +33,22 @@
   z-index: 9999;
 }
 
+.container:disabled {
+  background: var(--gradient-gray-135);
+  color: var(--color-gray);
+  cursor: not-allowed;
+}
+
+.container:disabled:hover {
+  transform: translateY(0);
+  z-index: 9999;
+}
+
+.container:disabled:active {
+  transform: translateY(0);
+  z-index: 9999;
+}
+
 @media (max-width: 767px) {
   .container {
     padding: 0.2rem 0.5rem;

@@ -9,6 +9,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import TypePage from "./pages/typePage/TypePage";
+import AuthPage from "./pages/authPage/AuthPage";
 
 const App = () => {
   return (
@@ -28,6 +29,11 @@ const App = () => {
         </Route>
 
         <Route path="/:userId/cart" element={<CartPage />} />
+
+        <Route path="/account">
+          <Route index={true} element={<AuthPage />} />
+          <Route path=":userId" />
+        </Route>
 
         <Route path="/shipping" element={<ProductsPage />} />
         <Route path="/photo-services" element={<ProductsPage />} />
