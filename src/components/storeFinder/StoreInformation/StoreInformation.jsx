@@ -27,11 +27,13 @@ const StoreInformation = (props) => {
 
         <p className={styles.businessHours}>
           {Object.keys(props.store.businessHours).map((key) => (
-            <p style={{ color: key === today ? "var(--color-orange)" : "" }}>
+            <p className={key === today ? styles.today : styles.normal}>
               {key} : {props.store.businessHours[key] ?? "closed"}
             </p>
           ))}
+
           <br />
+
           {props.store.phones.map((phone) => (
             <div className={styles.phoneContainer}>
               <FaPhoneAlt className={styles.phoneIcon} />

@@ -13,6 +13,14 @@
   color: var(--color-green);
 }
 
+.caption {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-transform: none;
+  color: var(--color-gray);
+}
+
 @media (max-width: 767px) {
   .authSection {
     padding: 1rem;

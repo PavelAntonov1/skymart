@@ -25,15 +25,15 @@ const AuthPage = (props) => {
         )}
 
         {!props.login && (
-          <p>
-            Already have an account with us?
+          <p className={styles.caption}>
+            Already have an account with us?&nbsp;
             <NavLink to="../login">Log In</NavLink> here.
           </p>
         )}
 
         {props.login && (
-          <p>
-            Don't have an account with us?
+          <p className={styles.caption}>
+            Don't have an account with us?&nbsp;
             <NavLink to="../signup">Sign Up</NavLink> here.
           </p>
         )}
