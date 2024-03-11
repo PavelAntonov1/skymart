@@ -31,7 +31,9 @@ const App = () => {
         <Route path="/:userId/cart" element={<CartPage />} />
 
         <Route path="/account">
-          <Route index={true} element={<AuthPage />} />
+          <Route index={true} element={<Navigate to="login" />} />
+          <Route path="login" element={<AuthPage login={true} />} />
+          <Route path="signup" element={<AuthPage login={false} />} />
           <Route path=":userId" />
         </Route>
 

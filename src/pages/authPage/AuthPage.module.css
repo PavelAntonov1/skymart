@@ -16,6 +16,7 @@
 @media (max-width: 767px) {
   .authSection {
     padding: 1rem;
+
     padding-bottom: 2rem;
     display: block;
     row-gap: 1rem;

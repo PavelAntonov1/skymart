@@ -54,7 +54,16 @@
 }
 
 @media (max-width: 767px) {
-  .container {
+  /* .container {
     display: none;
+  } */
+
+  .wave1 {
+    animation: none;
+  }
+
+  .wave2 {
+    animation: none;
+    background-position-x: -15rem;
   }
 }
